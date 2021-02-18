@@ -1,5 +1,4 @@
 import React, { Component, useState, useEffect } from "react";
-import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 import '../styles/App.css';
 
 const App = ({ slides }) => {
@@ -33,8 +32,8 @@ const App = ({ slides }) => {
           <p data-testid="text" className="text">{data.text}</p>
         </article>
 
-        <button disabled={disabledBack} data-testid="button-prev" className="prev" onClick={() => setIndex(index - 1)}><FiChevronLeft /></button>
-        <button disabled={disabledNext} data-testid="button-next" className="next" onClick={() => setIndex(index + 1)}><FiChevronRight /></button>
+        <button disabled={disabledBack} data-testid="button-prev" className="prev" onClick={() => setIndex(index - 1)}>Prev</button>
+        <button disabled={disabledNext} data-testid="button-next" className="next" onClick={() => setIndex(index + 1)}>Next</button>
         <button disabled={disabledBack} data-testid="button-restart" className="next" onClick={() => setIndex(0)}>Restart</button>
       </div>
     </>
